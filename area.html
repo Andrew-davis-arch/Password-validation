@@ -1,0 +1,11 @@
+<input type="number" id="radiusInput" placeholder="Enter radius">
+<button onclick="calculateArea()">Calculate Area</button>
+<p id="areaResult" class="output">Answer will appear here</p>
+
+<script>
+  function calculateArea() {
+    let radius = Number(document.getElementById('radiusInput').value);
+    let area = Math.PI * radius * radius;
+    document.getElementById('areaResult').innerHTML = "Area = " + area.toFixed(2);
+  }
+</script>
